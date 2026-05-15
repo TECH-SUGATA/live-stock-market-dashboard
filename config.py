@@ -4,7 +4,7 @@
 
 # 🔑 PASTE YOUR FINNHUB API KEY HERE
 # Get free key at: https://finnhub.io  (No credit card needed)
-FINNHUB_API_KEY = "d83j4u9r01qkm5c8bc3gd83j4u9r01qkm5c8bc40"
+FINNHUB_API_KEY = ""
 
 # 📈 Stocks to track (add/remove any US stock symbols)
 STOCKS = ["AAPL", "TSLA", "GOOGL", "MSFT", "AMZN"]
