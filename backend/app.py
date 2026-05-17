@@ -7,7 +7,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from config import config
-from models import db, bcrypt
+from flask_sqlalchemy import SQLAlchemy
+from flask_bcrypt import Bcrypt
+
+db = SQLAlchemy()
+bcrypt = Bcrypt()
 from routes.auth import auth_bp
 from routes.stocks import stocks_bp
 from routes.watchlist import watchlist_bp, portfolio_bp
