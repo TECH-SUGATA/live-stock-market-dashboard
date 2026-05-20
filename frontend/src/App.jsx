@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Toaster } from 'react-hot-toast'
 
-import Navbar      from './components/Navbar'
-import Sidebar     from './components/Sidebar'
+// ✅ CORRECT — matches the actual folder structure
+import Navbar from "./components/Layout/Navbar";
+import Sidebar from "./components/Layout/Sidebar";  // ✅
 import MarketTicker from './components/MarketTicker'
 import Dashboard   from './pages/Dashboard'
 import Markets     from './pages/Markets'
