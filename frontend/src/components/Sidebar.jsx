@@ -77,5 +77,3 @@ export default function Sidebar({ open, setOpen }) {
     </motion.aside>
   )
 }
-
-
