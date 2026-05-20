@@ -2,16 +2,14 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Toaster } from 'react-hot-toast'
-
-// ✅ CORRECT — matches the actual folder structure
-import Navbar from ./components/Layout/Navbar
-import Sidebar from "./components/Layout/Sidebar";  // ✅
+import Navbar from "./components/Layout/Navbar"
+import Sidebar from "./components/Layout/Sidebar"
 import MarketTicker from './components/Common/MarketTicker'
-import Dashboard   from './pages/Dashboard'
-import Markets     from './pages/Markets'
-import Portfolio   from './pages/Portfolio'
-import Watchlist   from './pages/Watchlist'
-import Analytics   from './pages/Analytics'
+import Dashboard from './pages/Dashboard'
+import Markets from './pages/Markets'
+import Portfolio from './pages/Portfolio'
+import Watchlist from './pages/Watchlist'
+import Analytics from './pages/Analytics'
 import { useStockData } from './hooks/useStockData'
 
 function AppLayout() {
@@ -20,7 +18,6 @@ function AppLayout() {
 
   return (
     <div className="min-h-screen" style={{ background: 'var(--bg-void)' }}>
-      {/* Toast */}
       <Toaster
         position="top-right"
         toastOptions={{
@@ -33,25 +30,16 @@ function AppLayout() {
           },
         }}
       />
-
-      {/* Sidebar */}
       <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
-
-      {/* Main area */}
       <motion.div
         animate={{ paddingLeft: sidebarOpen ? '272px' : '88px' }}
         transition={{ type: 'spring', damping: 28, stiffness: 350 }}
         className="min-h-screen flex flex-col"
       >
-        {/* Floating Navbar */}
         <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-
-        {/* Ticker — sits below navbar */}
         <div style={{ paddingTop: '72px' }}>
           <MarketTicker />
         </div>
-
-        {/* Page content */}
         <main className="flex-1 px-5 py-6">
           <AnimatePresence mode="wait">
             <Routes>
