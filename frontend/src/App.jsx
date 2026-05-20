@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Toaster } from 'react-hot-toast'
 
 // ✅ CORRECT — matches the actual folder structure
-import Navbar from "./components/Layout/Navbar";
+import Navbar from ./components/Layout/Navbar
 import Sidebar from "./components/Layout/Sidebar";  // ✅
 import MarketTicker from './components/MarketTicker'
 import Dashboard   from './pages/Dashboard'
