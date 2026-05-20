@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast'
 // ✅ CORRECT — matches the actual folder structure
 import Navbar from ./components/Layout/Navbar
 import Sidebar from "./components/Layout/Sidebar";  // ✅
-import MarketTicker from './components/MarketTicker'
+import MarketTicker from './components/Common/MarketTicker'
 import Dashboard   from './pages/Dashboard'
 import Markets     from './pages/Markets'
 import Portfolio   from './pages/Portfolio'
