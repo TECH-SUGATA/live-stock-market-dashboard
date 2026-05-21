@@ -10,7 +10,7 @@ import Markets from './pages/Markets'
 import Portfolio from './pages/Portfolio'
 import Watchlist from './pages/Watchlist'
 import Analytics from './pages/Analytics'
-import useStockData from './hooks/useStockData';
+import { useStockData } from './hooks/useStockData'
 
 function AppLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
