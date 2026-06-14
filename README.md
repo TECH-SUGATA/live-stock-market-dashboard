@@ -46,6 +46,16 @@ Built with a production-grade React + Flask architecture and integrated with liv
 
 > **Target Users:** Individual investors, active traders, finance students, and analytics-focused professionals seeking a unified view of market data and portfolio performance.
 
+
+### 🌐 Live Application
+https://live-stock-market-dashboard-app.vercel.app/
+
+### 📂 GitHub Repository
+https://github.com/TECH-SUGATA/live-stock-market-dashboard
+
+### 👨‍💻 Developer
+Sugata Nayak
+
 ---
 
 ## The Problem
